@@ -1,0 +1,65 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: hsla(23, 39%, 22%, 1);
+    background-color: rgba(0, 0, 0, 0.3); /* Darken the image background with transparency */
+    position: relative;
+  }
+  
+  .nav-links {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  
+  .nav-links li {
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for color, scaling, etc. */
+    position: relative;
+  }
+  
+  /* Active link state with scaling */
+  .nav-links li:active {
+    color: hsla(46, 74%, 49%, 1); /* Change color when active (or pressed) */
+    transform: scale(0.98) rotate(2deg); /* Shrink and rotate the link slightly when clicked */
+  }
+  
+  /* Hover effect to indicate a link is clickable with underline animation */
+  .nav-links li:hover {
+    color: hsla(46, 74%, 49%, 1); /* Change color on hover */
+    text-decoration: none; /* Remove default underline */
+  }
+  
+  /* Animated underline */
+  .nav-links li::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: hsla(46, 74%, 49%, 1); /* Color of the underline */
+    transition: width 0.3s ease; /* Animate the underline width */
+  }
+  
+  .nav-links li:hover::before {
+    width: 100%; /* Expand the underline to full width */
+  }
+  
+  /* Box shadow effect on hover */
+  .nav-links li:hover {
+    transform: translateY(-3px); /* Slight upward movement for the hover effect */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+    color: hsla(46, 74%, 49%, 1); /* Ensures the color is visible on hover */
+  }
+  
+  /* Optionally, you can add an active state for the navbar items based on current active page */
+  .nav-links li.active {
+    font-weight: bold; /* Optionally highlight the active link with bold text */
+    color: hsla(46, 74%, 49%, 1); /* Highlight active link with a different color */
+  }
+  
