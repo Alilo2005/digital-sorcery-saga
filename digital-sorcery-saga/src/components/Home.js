@@ -4,7 +4,7 @@ import Navbar from './Navbar'
 import Title from './Title';
 function Home() {
   return (
-    <div className="Nav">
+    <div className="Home">
       <LogosRegister />
       <Navbar />
       <Title />
