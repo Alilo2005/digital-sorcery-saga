@@ -1,0 +1,39 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family:"magicSchool" ;
+  src: url(../fonts/MagicSchoolOne.ttf);
+}
+
+
+@font-face {
+  font-family: "Mrs Eaves";
+  src: url(../fonts/Mrs-Eaves-OT-Roman_31443_3.ttf);
+}
+
+@font-face {
+  font-family: "bookmania";
+  src: url(../fonts/Fontspring-DEMO-bookmania-regular.otf);
+}
+
+@font-face {
+  font-family: "Solbera";
+  src: url(../fonts/Solbera\ Imitation.otf);
+}
+
