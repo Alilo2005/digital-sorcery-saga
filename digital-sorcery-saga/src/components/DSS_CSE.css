@@ -1,0 +1,26 @@
+/* Styling for the logo container */
+.logos {
+    display: flex;
+    justify-content: center; /* Centers the logos horizontally */
+    align-items: center; /* Centers the logos vertically */
+    gap: 30px; /* Adds space between the logos */
+    padding: 100px 20px; /* Adds padding around the container */
+  }
+  
+  /* Styling for each logo */
+  .logos img {
+    width: 180px; /* Set a fixed width for each logo */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for logos */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; /* Smooth transitions */
+  }
+  
+  /* Hover effect on logo images - golden glow effect */
+  .logos img:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.8), 0 0 30px rgba(255, 215, 0, 0.6); /* Golden glow around logo */
+    filter: brightness(1.3) saturate(1.5); /* Glowing effect */
+  }
+  
+  
+ 
