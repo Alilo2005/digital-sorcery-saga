@@ -9,7 +9,7 @@
   
   /* Styling for each logo */
   .logos img {
-    width: 180px; /* Set a fixed width for each logo */
+    width: 150px; /* Set a fixed width for each logo */
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px; /* Rounded corners for logos */
     transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; /* Smooth transitions */

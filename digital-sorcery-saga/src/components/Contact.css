@@ -1,0 +1,156 @@
+.contact-footer {
+  background-color: #3c2f2f;
+  color: white;
+  padding: 2rem 0;
+  width: 100%;
+  
+}
+
+.contact-container {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.contact-title {
+  font-family: 'Gothic', sans-serif;
+  color: #4a90e2;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 3rem;
+}
+
+.newsletter-section {
+  text-align: left;
+}
+
+.newsletter-section p {
+  margin-bottom: 1rem;
+}
+
+.newsletter-section form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter-section input {
+  flex: 1;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.newsletter-section button {
+  padding: 0.8rem 2rem;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter-section button:hover {
+  background-color: #357abd;
+}
+
+.newsletter-section small {
+  color: #888;
+  font-size: 0.8rem;
+}
+
+.links-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.quick-links h3,
+.connect-section h3 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.quick-links ul,
+.social-links {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links li,
+.social-links li {
+  margin-bottom: 0.5rem;
+}
+
+.quick-links a,
+.social-links a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.quick-links a:hover,
+.social-links a:hover {
+  color: #4a90e2;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #4a90e2;
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .links-section {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .newsletter-section form {
+    flex-direction: column;
+  }
+}

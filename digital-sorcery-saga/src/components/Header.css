@@ -9,11 +9,12 @@
 .video-section {
     display: flex;
     align-items: center;
+    padding-right: 150px;
 }
 
 /* Video player styling */
 .video-player {
-    width: 550px;
+    width: 450px;
     height: auto;
     border-radius: 10px;
     border: 2px solid transparent;
@@ -23,6 +24,7 @@
                 0 0 30px rgba(218, 165, 32, 0.7);
     transition: transform 0.4s, box-shadow 0.4s;
     cursor: pointer;
+    
 }
 
 .video-player:hover {
