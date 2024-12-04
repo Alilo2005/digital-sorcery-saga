@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "magicSchool";
+    src: url('./../fonts/MagicSchoolOne.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
