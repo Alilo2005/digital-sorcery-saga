@@ -12,7 +12,7 @@
   .title {
     font-size: 2.7rem; /* Adjusted to a more moderate size */
     font-weight: 700;  /* Bold text */
-    color: hsla(23, 39%, 22%, 1); /* Dark color for the title */
+    color: hsla(225, 60%, 25%, 1); /* Dark color for the title */
     text-transform: uppercase; /* Uppercase text */
     letter-spacing: 4px; /* Reduced spacing between letters */
     text-align: center; /* Centers the title */
