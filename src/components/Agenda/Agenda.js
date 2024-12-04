@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import Calendar from '../Calender/Calender.js';
+import CalendarAgenda from '../Calender/CalenderAgenda.js';
 import PhaseButton from '../Button/PhaseButton.js';
 import phases from '../../Asserts/Phases.js';
 import PhaseCard from '../Phases/PhaseCard.js';
@@ -14,9 +14,11 @@ const Agenda = () => {
   };
 
     return (
+      
         <div className='Agenda'>
+            <p>Agenda</p>
             <div className='Phases_calendar'>
-                <Calendar selectedPhase={selectedPhase}/>
+                <CalendarAgenda selectedPhase={selectedPhase}/>
                 <PhaseCard phases={phases[selectedPhase]}/> 
             </div>
                 

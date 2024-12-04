@@ -13,7 +13,7 @@ function PhaseButton({ onPhaseChange }) {
   };
 
   return (
-    <button onClick={handleClick}>Next Phase</button>
+    <button className='btn' onClick={handleClick}>-  Next Phase  -</button>
   );
 }
 

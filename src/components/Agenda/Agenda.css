@@ -11,9 +11,20 @@
 }
 .Phases_calendar{
     width: 100%;
-    height: 85vh;
-    align-items: center;
-    background: red;
+    height: 75vh;
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
+
+}
+.Agenda p {
+    margin: 0;
+    position: relative;
+    top: 1%;
+    font-family: magicSchool;
+    font-size: 100px;
+    font-weight: 400;
+    color: #1A2D67;
+    text-align: center;
+    text-shadow: 2px 1px black;
 }

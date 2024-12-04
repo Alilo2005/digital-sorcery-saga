@@ -37,3 +37,8 @@ code {
   src: url(../fonts/Solbera\ Imitation.otf);
 }
 
+@font-face {
+  font-family:"Poppins";
+  src: url(../fonts/Poppins-Bold.ttf);
+}
+
