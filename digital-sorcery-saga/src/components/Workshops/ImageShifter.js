@@ -24,8 +24,8 @@ const ImageShifter = ({
   return (
     <div className="flex items-center justify-center space-x-6 p-6">
       <div className="w-1/4 pr-6">
-        <h2 className="text-3xl font-bold text-gray-800 mb-2">{title}</h2>
-        <p className="text-md text-gray-600">{subtitle}</p>
+        <h2 className="text-5xl font-bold text-gray-800 mb-2">{title}</h2>
+        <p className="text-3xl text-gray-600">{subtitle}</p>
       </div>
       <div className="flex items-center space-x-4">
         <button 

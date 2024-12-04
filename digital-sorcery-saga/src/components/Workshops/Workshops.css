@@ -3,5 +3,6 @@ body {
     background-image: url('./../../../public/map.png'); /* Relative path from the public folder */
     background-size: cover;
     margin: 0; 
-    font-size: xx-large;
   }
+
+ 
