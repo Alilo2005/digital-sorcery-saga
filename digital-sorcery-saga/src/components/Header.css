@@ -1,0 +1,44 @@
+/* General header styling */
+.header {
+    display: flex;
+    justify-content: start;
+    padding-right: 4rem;
+}
+
+/* Video section styling */
+.video-section {
+    display: flex;
+    align-items: center;
+}
+
+/* Video player styling */
+.video-player {
+    width: 550px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background: linear-gradient(to right, gold, goldenrod) padding-box, 
+                linear-gradient(90deg, rgba(255, 215, 0, 0.7), rgba(218, 165, 32, 0.7)) border-box;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5), 
+                0 0 30px rgba(218, 165, 32, 0.7);
+    transition: transform 0.4s, box-shadow 0.4s;
+    cursor: pointer;
+}
+
+.video-player:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .video-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-player {
+        width: 100%;
+    }
+}

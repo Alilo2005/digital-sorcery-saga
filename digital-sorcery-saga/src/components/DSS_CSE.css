@@ -4,7 +4,7 @@
     justify-content: end; /* Centers the logos horizontally */
     align-items: center; /* Centers the logos vertically */
     gap: 20px; /* Adds space between the logos */
-    padding: 100px 20px; /* Adds padding around the container */
+    padding: 50px 20px; /* Adds padding around the container */
   }
   
   /* Styling for each logo */
