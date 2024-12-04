@@ -1,13 +1,4 @@
-/* Flex container to center the title */
-.container {
-    display: flex;
-    justify-content: center;  /* Horizontally centers the content */
-    align-items: center;      /* Vertically centers the content */
-    height: 100vh;            /* Makes the container take up the full height of the viewport */
-    text-align: center;       /* Ensures text inside the container is centered */
-    background: radial-gradient(circle, rgba(23, 39, 22, 0.8), rgba(0, 0, 50, 0.8)); /* Dark magical background */
-  }
-  
+ 
   /* Styling for the big title */
   .title {
     font-size: 2.7rem; /* Adjusted to a more moderate size */
