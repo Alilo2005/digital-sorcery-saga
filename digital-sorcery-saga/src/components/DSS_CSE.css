@@ -1,7 +1,7 @@
 /* Styling for the logo container */
 .logos {
     display: flex;
-    justify-content: center; /* Centers the logos horizontally */
+    justify-content: end; /* Centers the logos horizontally */
     align-items: center; /* Centers the logos vertically */
     gap: 30px; /* Adds space between the logos */
     padding: 100px 20px; /* Adds padding around the container */
