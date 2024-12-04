@@ -16,7 +16,7 @@ function Contact() {
           <div className="links-section">
             <QuickLinks />
             <div className="connect-section">
-              <h3>Connect With Us</h3>
+              <h3>Stay Connected</h3>
               <SocialLinks />
             </div>
           </div>
