@@ -1,3 +1,8 @@
+.nav{
+  position: sticky; /* Make navbar sticky */
+  top: 0; /* Stick to the top of the page */
+  z-index: 1000; /* Make sure the navbar stays on top */
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -6,9 +11,6 @@
     margin-bottom: 20px;
     color: hsla(23, 39%, 22%, 1);
     background-color: rgba(0, 0, 0, 0.3); /* Darken the image background with transparency */
-    position: sticky; /* Make navbar sticky */
-    top: 0; /* Stick to the top of the page */
-    z-index: 1000; /* Make sure the navbar stays on top */
     width: 100%; /* Ensure the navbar stretches across the page */
   }
   
@@ -66,4 +68,102 @@
     font-weight: bold; /* Optionally highlight the active link with bold text */
     color: hsla(46, 74%, 49%, 1); /* Highlight active link with a different color */
   }
+  .logos-register {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    background-color: hsla(23, 39%, 22%, 1);
+    box-shadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.25);
+    padding: 5px 15px 5px 15px; 
+  }
   
+/* Flex container to arrange the logos in a row */
+.logo-container {
+  display: flex;
+  justify-content: space-around; /* Distributes the logos evenly */
+  align-items: center; /* Vertically centers the logos */
+  gap: 10px; /* Adds space between the logos */
+  padding: 3px; /* Adds padding around the container */
+}
+
+/* Styling for the images */
+.tech, .wisdom, .creativity {
+  width: 40px; /* Sets the width of each logo */
+  height: auto; /* Maintains aspect ratio */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Adds smooth transition for transformations and effects */
+}
+
+/* Hover effects for logos */
+.tech:hover, .wisdom:hover, .creativity:hover {
+  transform: scale(1.2) rotate(10deg); /* Scales the logo up and rotates it slightly */
+  filter: brightness(1.2); /* Increases brightness on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds a shadow around the logo */
+}
+
+/* Optionally, you can add a 'hover active' effect with a color change */
+.tech:hover {
+  filter: hue-rotate(45deg); /* Changes the color hue when hovering the 'tech' logo */
+}
+
+.wisdom:hover {
+  filter: hue-rotate(-45deg); /* Changes the color hue when hovering the 'wisdom' logo */
+}
+
+.creativity:hover {
+  filter: sepia(1); /* Applies a sepia tone effect to the 'creativity' logo */
+}
+
+  
+.register-btn {
+  font-size: larger;
+  margin-left: auto;
+  background-color: hsla(225, 60%, 25%, 1);
+  border-bottom: 3px solid hsla(46, 74%, 49%, 0.67);
+  color: aliceblue;
+  width: 150px;
+  height: 40px;
+  top: 13px;
+  left: 1041px;
+  gap: 0px;
+  border-radius: 48px;
+  opacity: 1; /* Ensure button is visible */
+  text-shadow: 
+    2px 2px 0px #000,   /* Top-left border */
+    -2px 2px 0px #000,  /* Bottom-left border */
+    2px -2px 0px #000,  /* Top-right border */
+    -2px -2px 0px #000; /* Bottom-right border */
+  transition: all 0.3s ease-in-out; /* Smooth transition for all states */
+}
+
+/* Hover effect */
+.register-btn:hover {
+  background-color: hsla(225, 60%, 30%, 1); /* Darker on hover */
+  transform: scale(1.1); /* Scale up the button */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+  border-bottom: 3px solid hsla(46, 74%, 49%, 1); /* Darker border on hover */
+  text-shadow: 
+    4px 4px 0px rgba(0, 0, 0, 0.6),  /* Stronger shadow on hover */
+    -4px 4px 0px rgba(0, 0, 0, 0.6),
+    4px -4px 0px rgba(0, 0, 0, 0.6),
+    -4px -4px 0px rgba(0, 0, 0, 0.6);
+  filter: brightness(1.2); /* Makes the button glow slightly */
+}
+
+/* Active (click) effect */
+.register-btn:active {
+  background-color: hsla(225, 60%, 35%, 1); /* Even darker on click */
+  transform: scale(0.98) rotate(2deg); /* Slight shrink and rotation when clicked */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Adds a stronger shadow on click */
+  border-bottom: 3px solid hsla(46, 74%, 49%, 1); /* Darker border on active state */
+  text-shadow: 
+    4px 4px 0px rgba(0, 0, 0, 0.8), /* Intense shadow on active */
+    -4px 4px 0px rgba(0, 0, 0, 0.8),
+    4px -4px 0px rgba(0, 0, 0, 0.8),
+    -4px -4px 0px rgba(0, 0, 0, 0.8);
+}
+
+/* Focus effect */
+.register-btn:focus {
+  outline: none; /* Removes the default outline */
+  box-shadow: 0 0 8px hsla(46, 74%, 49%, 1); /* Adds a glowing border when focused */
+}
