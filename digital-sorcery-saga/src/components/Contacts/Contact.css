@@ -3,7 +3,6 @@
   color: white;
   padding: 2rem 0;
   width: 100%;
-  
 }
 
 .contact-container {
@@ -14,10 +13,16 @@
 }
 
 .contact-title {
-  color: #4a90e2;
+  color: hsla(225, 60%, 25%, 1);
   font-size: 2.5rem;
   margin-bottom: 2rem;
   text-align: left;
+  text-transform: uppercase; /* Capitalize the title */
+  letter-spacing: 1.5px; /* Add spacing between letters */
+  font-weight: bold; /* Make the text bold */
+  border-left: 5px solid hsla(225, 60%, 25%, 1); /* Add a decorative left border */
+  padding-left: 1rem; /* Add space between the text and the border */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Add a soft shadow for depth */
 }
 
 .contact-content {
@@ -47,6 +52,13 @@
   border: none;
   border-radius: 4px;
   background-color: #ffffff;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.newsletter-section input:hover,
+.newsletter-section input:focus {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02); /* Slight zoom on hover and focus */
 }
 
 .newsletter-section button {
@@ -56,11 +68,12 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .newsletter-section button:hover {
   background-color: #357abd;
+  transform: translateY(-2px); /* Subtle lift on hover */
 }
 
 .newsletter-section small {
@@ -96,12 +109,13 @@
 .social-links a {
   color: #ffffff;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.3s, transform 0.3s;
 }
 
 .quick-links a:hover,
 .social-links a:hover {
   color: #4a90e2;
+  transform: translateX(5px); /* Slide to the right on hover */
 }
 
 .footer-bottom {
@@ -121,11 +135,12 @@
 .footer-links a {
   color: #ffffff;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.3s, transform 0.3s;
 }
 
 .footer-links a:hover {
   color: #4a90e2;
+  transform: scale(1.1); /* Enlarge slightly on hover */
 }
 
 @media (max-width: 768px) {
