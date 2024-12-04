@@ -1,6 +1,6 @@
 import './Home.css';
-import Title from './Title';
-import DSS_CSE from './DSS_CSE';
+import Title from './Title/Title';
+import DSS_CSE from './DSS_CSE/DSS_CSE'
 function Home() {
   return (
     <div className="Home">

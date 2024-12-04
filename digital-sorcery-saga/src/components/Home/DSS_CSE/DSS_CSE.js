@@ -1,5 +1,5 @@
 import './DSS_CSE.css'
-import Header from './Header';
+import Header from '../Header/Header';
 export default function DSS_CSE(){
     return (
          <>

@@ -1,0 +1,6 @@
+body {
+    font-family: 'magicSchool', Algerian;
+    background-image: url('./../../../public/map.png'); /* Relative path from the public folder */
+    background-size: cover;
+    margin: 0; 
+  }

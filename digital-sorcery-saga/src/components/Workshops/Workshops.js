@@ -1,5 +1,4 @@
 import './Workshops.css'
-import './Title.js'
 import ImageShifter from './ImageShifter.js';
 export default function Workshops(){
     return (

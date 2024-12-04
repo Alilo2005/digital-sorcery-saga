@@ -26,6 +26,7 @@
     cursor: pointer;
     transition: all 0.3s ease; /* Smooth transition for color, scaling, etc. */
     position: relative;
+    font-size:x-large;
   }
   
   /* Active link state with scaling */

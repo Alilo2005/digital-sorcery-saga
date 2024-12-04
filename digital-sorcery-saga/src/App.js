@@ -1,10 +1,10 @@
 import './App.css';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar';
 import React from 'react';
-import Home from './components/Home';
+import Home from './components/Home/Home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Workshops from './components/Workshops';
-import Contact from './components/Contact';
+import Workshops from './components/Workshops/Workshops';
+import Contact from './components/Contacts/Contact';
 
 function App() {
   return (
