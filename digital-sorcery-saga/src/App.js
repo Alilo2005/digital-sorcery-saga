@@ -3,7 +3,7 @@ import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 
 import Workshops from './components/Workshops/Workshops';
-
+import Faq from './components/Faq/Faq'
 import Contact from './components/Contacts/Contact'
 import About from './components/About/About';
 import Agenda from './components/Agenda/Agenda'
@@ -15,7 +15,7 @@ function App() {
             <div id="about"><About /></div>
             <div id="agenda"><Agenda /></div>
             <div id="workshops"><Workshops /></div>
- 
+            <div id="faq"><Faq /></div>
             <div id="contacts"><Contact /></div>
         </div>
     );

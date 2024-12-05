@@ -1,0 +1,163 @@
+ /* Styling for the big title */
+ .title {
+    font-size: 2.7rem; /* Adjusted to a more moderate size */
+    font-weight: 700;  /* Bold text */
+    color: hsla(225, 60%, 25%, 1); /* Dark color for the title */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 4px; /* Reduced spacing between letters */
+    text-align: center; /* Centers the title */
+    text-shadow: 
+      0 0 5px #ffd700, /* Soft glowing gold light */
+      0 0 10px #ffd700, /* Magical gold glow */
+      0 0 15px #ffd700, /* Stronger golden glow */
+      0 0 20px #ffd700, /* Larger glowing golden halo */
+      0 0 25px #ffd700, /* Intense gold shine */
+      0 0 30px #ffd700; /* Bigger gold halo */
+    transition: all 0.5s ease-in-out; /* Smooth transition for hover and active effects */
+    margin: 0; /* Removes default margin */
+    position: relative; /* Allows for pseudo-element for extra effects */
+    z-index: 1; /* Ensures text stays above any pseudo-elements */
+  }
+ 
+  /* Sparkle animation for a magical effect */
+  @keyframes sparkle {
+    0% {
+      text-shadow: 
+        0 0 5px #ffd700, 
+        0 0 10px #ffd700, 
+        0 0 15px #ffd700, 
+        0 0 30px #ffd700;
+    }
+    50% {
+      text-shadow: 
+        0 0 15px #ffd700, 
+        0 0 30px #ffd700, 
+        0 0 45px #ffd700, 
+        0 0 60px #ffd700;
+    }
+    100% {
+      text-shadow: 
+        0 0 5px #ffd700, 
+        0 0 10px #ffd700, 
+        0 0 15px #ffd700, 
+        0 0 30px #ffd700;
+    }
+  }
+  
+  /* Apply sparkle animation */
+  .title {
+    animation: sparkle 3s infinite alternate; /* Sparkle effect on title */
+  }
+  
+
+  
+  /* FAQ Item Wrapper */
+  .faq-item {
+    background: hsla(225, 60%, 25%, 1);/* Blue gradient */
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  /* Hover Effect */
+  .faq-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Gold Sparkle Effect */
+  .faq-item:hover::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle, #ffd700 0%, transparent 80%);
+    border-radius: 50%;
+    animation: sparkle 1.5s infinite ease-in-out;
+  }
+  
+  .faq-item:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: -5px;
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle, #ffd700 0%, transparent 80%);
+    border-radius: 50%;
+    animation: sparkle 1.5s infinite ease-in-out reverse;
+  }
+  
+  @keyframes sparkle {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 0.7;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 1;
+    }
+  }
+  
+  /* Question Styling */
+  .faq-question {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff; /* White for contrast */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  /* Icon Styling */
+  .faq-icon {
+    font-size: 1.5rem;
+    color: #e0f7fa; /* Light Cyan */
+    margin-right: 0.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover Effect for Question */
+  .faq-question:hover {
+    color: #ffd700; /* Gold */
+  }
+  
+  .faq-question:hover .faq-icon {
+    color: #ffd700; /* Gold */
+  }
+  
+  /* Answer Styling */
+  .faq-answer {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #e0f2fe; /* Lighter Cyan */
+    line-height: 1.5;
+    display: none; /* Initially hidden */
+  }
+  
+  /* Active/Expanded State */
+  .faq-item.active .faq-answer {
+    display: block;
+  }
+  
+  /* Smooth Transition for Active State */
+  .faq-item.active .faq-answer {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
