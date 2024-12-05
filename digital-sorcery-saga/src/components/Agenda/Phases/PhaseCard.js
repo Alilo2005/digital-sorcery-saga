@@ -1,5 +1,4 @@
 import React from 'react';
-import phases from '../Phases'
 import './PhaseCard.css';
 
 function PhaseCard({ phases }) {
