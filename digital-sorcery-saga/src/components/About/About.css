@@ -43,8 +43,8 @@
   
   .description p {
     color: black;
-    font-size: 22px;
-    font-family: bookmania;
+    font-size: 21px;
+    font-family: Algerian;
     font-weight: 580;
     letter-spacing: 1.5px;
     z-index: 2;
@@ -65,7 +65,7 @@
     bottom: 8%;
     border: none;
     cursor: pointer;
-    font-family: Magic School One;
+    font-family: "magicSchool";
     font-size: 28px;
     font-weight: 400;
     line-height: 50px;
