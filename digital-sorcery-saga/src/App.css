@@ -1,2 +1,20 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'magicSchool', Algerian;
+}
+
+
+#home, #about, #agenda, #workshops, #sponsors, #faq, #contacts {
+    background-image: url('./../public/map.png'); /* Relative path from the public folder */
+    background-size: contain;
+    min-height: 100vh; /* Make each section take the full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-margin-top: 90px;
+}
 
 

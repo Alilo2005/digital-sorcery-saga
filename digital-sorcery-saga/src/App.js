@@ -1,27 +1,22 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
-import React from 'react';
 import Home from './components/Home/Home';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import Workshops from './components/Workshops/Workshops';
-import Contact from './components/Contacts/Contact';
-import ScrollToTop from './ScrollToTop';
+
+import Contact from './components/Contacts/Contact'
 
 function App() {
-  return (
-    <>
-        <Router>
-          <Navbar />
-          <ScrollToTop />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path='/Workshops' element={<Workshops />} />
-            <Route path='/Contacts' element={<Contact />} />
-          </Routes>
-          
-        </Router>
-    </>
-  );
+    return (
+        <div>
+            <Navbar />
+            <div id="home"><Home /></div>
+
+            <div id="workshops"><Workshops /></div>
+ 
+            <div id="contacts"><Contact /></div>
+        </div>
+    );
 }
 
 export default App;

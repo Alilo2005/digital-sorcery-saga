@@ -1,14 +1,17 @@
 .nav{
-  position: sticky; /* Make navbar sticky */
-  top: 0; /* Stick to the top of the page */
-  z-index: 1000; /* Make sure the navbar stays on top */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Ensure it spans the entire width */
+  background-color: rgb(164, 102, 63); /*TDOO*/
 }
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    margin-bottom: 20px;
     color: hsla(23, 39%, 22%, 1);
     background-color: rgba(0, 0, 0, 0.3); /* Darken the image background with transparency */
     width: 100%; /* Ensure the navbar stretches across the page */
