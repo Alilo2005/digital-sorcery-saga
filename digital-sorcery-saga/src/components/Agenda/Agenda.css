@@ -1,0 +1,62 @@
+.Agenda {
+    padding-top: 70px;
+}
+.Phases_calendar{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+ 
+  /* Styling for the big title */
+  .title {
+    font-size: 2.7rem; /* Adjusted to a more moderate size */
+    font-weight: 700;  /* Bold text */
+    color: hsla(225, 60%, 25%, 1); /* Dark color for the title */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 4px; /* Reduced spacing between letters */
+    text-align: center; /* Centers the title */
+    text-shadow: 
+      0 0 5px #ffd700, /* Soft glowing gold light */
+      0 0 10px #ffd700, /* Magical gold glow */
+      0 0 15px #ffd700, /* Stronger golden glow */
+      0 0 20px #ffd700, /* Larger glowing golden halo */
+      0 0 25px #ffd700, /* Intense gold shine */
+      0 0 30px #ffd700; /* Bigger gold halo */
+    transition: all 0.5s ease-in-out; /* Smooth transition for hover and active effects */
+    margin: 0; /* Removes default margin */
+    position: relative; /* Allows for pseudo-element for extra effects */
+    z-index: 1; /* Ensures text stays above any pseudo-elements */
+  }
+ 
+  /* Sparkle animation for a magical effect */
+  @keyframes sparkle {
+    0% {
+      text-shadow: 
+        0 0 5px #ffd700, 
+        0 0 10px #ffd700, 
+        0 0 15px #ffd700, 
+        0 0 30px #ffd700;
+    }
+    50% {
+      text-shadow: 
+        0 0 15px #ffd700, 
+        0 0 30px #ffd700, 
+        0 0 45px #ffd700, 
+        0 0 60px #ffd700;
+    }
+    100% {
+      text-shadow: 
+        0 0 5px #ffd700, 
+        0 0 10px #ffd700, 
+        0 0 15px #ffd700, 
+        0 0 30px #ffd700;
+    }
+  }
+  
+  /* Apply sparkle animation */
+  .title {
+    animation: sparkle 3s infinite alternate; /* Sparkle effect on title */
+  }
+  

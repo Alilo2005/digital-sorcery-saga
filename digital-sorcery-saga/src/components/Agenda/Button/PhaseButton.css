@@ -1,0 +1,11 @@
+.btn{
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 76%;
+    bottom: 1.3%;
+    cursor: pointer;
+   
+}
