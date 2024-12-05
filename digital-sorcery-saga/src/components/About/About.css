@@ -1,0 +1,76 @@
+
+  
+  .about h2 {
+    bottom: 6%;
+    position: relative;
+    font-family: magicSchool;
+    font-size: 50px;
+    font-weight: 200;
+    color: #1A2D67;
+    text-align: center;
+    text-shadow: 2px 1px black;
+  
+  }
+  
+  .description {
+    bottom: 13%;
+    position: relative;
+    background-color: rgba(33, 29, 29, 0.2);
+    background-blend-mode: overlay;
+    border-radius: 90px;
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 85%;
+    height: 65%;
+    z-index: auto;
+  
+  }
+  
+  .drop-cap h6 {
+    margin: 0;
+    font-family: Solbera;
+    font-size: 98px;
+    position: relative;
+    font-weight: 200;
+    text-align: left;
+    left: 3%;
+    float: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  
+  }
+  
+  .description p {
+    color: black;
+    font-size: 22px;
+    font-family: bookmania;
+    font-weight: 580;
+    letter-spacing: 1.5px;
+    z-index: 2;
+    width: 90%;
+    left: 5%;
+    position: relative;
+  }
+  
+  .button {
+    height: 58.36px;
+    width: 15%;
+    background: rgba(26, 45, 103, 1);
+    box-shadow: 0px 7px 3.9px 0px rgba(218, 174, 32, 0.71);
+    color: white;
+    border-radius: 22px;
+    position: relative;
+    left: 34%;
+    bottom: 8%;
+    border: none;
+    cursor: pointer;
+    font-family: Magic School One;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-left: 95px;
+  }
